@@ -370,12 +370,12 @@
           </tr>    -->
 
   
-          <!-- SLAM -->
+          <!-- Boundary Detection -->
   
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  <!--bgcolor="#ffffd0"-->
                       <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
-                          <img src='images/map1.PNG' width="200" height="200">
+                          <img src='images/pblite.png' width="200" height="200">
                         </div>
                         <script type="text/javascript">
                           function nerf_start() {
@@ -389,15 +389,16 @@
                         </script>
                       </td>
                       <td style="padding:20px;width:75%;vertical-align:middle">
-                          <papertitle>Simultaneous Localization and Mapping (SLAM)
+                          <papertitle>Boundary Detection
                           </papertitle>
                         <br>
-                      <em>Spring 2022</em>
+                      <em>Spring 2023</em>
                         <br>
-                        Code:<a href="https://github.com/rohiitb/MonteCarlo_localization_SLAM"> Github</a>
+                        Code:<a href="https://github.com/swagholikar29/Pb-Probability-of-Boundary-Lite-Boundary-Detection"> GitHub</a>
                         <p></p>
                         <p>
-                          In this project, we integrated the IMU orientation and the odometry information obtained from 2D LiDAR scans from a walking humanoid robot in order to build a 2D occupancy grid map of the walls and obstacles in the environment. Particle filter was used for localization.<br>
+                          In this project, Detected edges in image using probability based boundary detection using K-means clustering of Oriented DoG (ODoG),
+                          Leung-Malik (LM) and Gabor Filter bank responses. Outperformed the results from classical canny and sobel filters.<br>
                             <br>
                         </p>
                       </td>
