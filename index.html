@@ -288,12 +288,12 @@
 
            
           
-        <!-- MSCKF -->
+        <!-- 3D Reconstruction from images -->
 
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
             <td style="padding:20px;width:30%;vertical-align:middle">
              <div class="one">
-                 <img src='images/msckf_gif.gif' width="220" height="160">
+                 <img src='images/sfm.png' width="220" height="160">
              </div>
 
               <script type="text/javascript">
@@ -309,15 +309,15 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
                 <papertitle>
-                  Multi-state Constraint Kalman filter (MSCKF) Visual-inertial odometry 
+                  3D Reconstruction from images 
                 </papertitle>
               <br>
-        <em>Spring 2023</em>
+        <em>Summer 2023</em>
               <br>
-              Code:<a href="https://github.com/rohiitb/msckf_vio_python"> Github</a>
+              Code:<a href="https://github.com/swagholikar29/3D-Reconstruction-from-images"> Github</a>
               <p></p>
-              <p> MSCKF (Multi-State Constraint Kalman Filter) is an EKF based tightly-coupled visual-inertial odometry algorithm. 
-                Implemented the stereo version of this algorithm to estimate a robust pose of the flying robot at higher speeds.
+              <p> Simultaneously reconstructed 3D scene Mapping and extracted camera pose Localization from given stereo camera
+                correspondences using Non-Linear triangulation, Non-Linear PnP and Bundle Adjustment (BA) pipeline.
                   <br>
               </p>
             </td>
