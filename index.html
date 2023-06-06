@@ -405,12 +405,12 @@
                     </tr>
           
           
-          <!-- MPC Manipulator Arm -->
+          <!-- Auto Calib -->
   
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  <!--bgcolor="#ffffd0"-->
                       <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
-                          <img src='images/mpc_arm_gif.gif' width="200" height="200">
+                          <img src='images/camera_calibration.png' width="200" height="200">
                         </div>
                         <script type="text/javascript">
                           function nerf_start() {
@@ -424,32 +424,29 @@
                         </script>
                       </td>
                       <td style="padding:20px;width:75%;vertical-align:middle">
-                          <papertitle>7-DoF Robotic Arm Manipulation using MPC and Vision-based Object grasping
+                          <papertitle>Auto Calib: Camera Calibration
                           </papertitle>
                         <br>
-                      <em>Fall 2022</em>
+                      <em>Spring 2023</em>
+                      <!--  <br>
+                        Report:<a href="data/mpc_manipulator_report.pdf"> Link</a> -->
                         <br>
-                        Report:<a href="data/mpc_manipulator_report.pdf"> Link</a>
-                        <br>
-                        Code:<a href="https://github.com/rohiitb/manipulator_mpc"> Github</a>
+                        Code:<a href="https://github.com/swagholikar29/Camera-Calibration"> GitHub</a>
                         <p></p>
                         <p>
-                            In this project, for the first stage, we succesfully solved the task of picking up static and dynamic cubes. Cubes were having Apriltags on their faces which were used to get the pose. <br>
-                            Implemented forward kinematics, inverse kinematics to plan a path to pick up the cubes and stack them to create a tower.<br>
-                            Implemented Rapidly Exploring Random Trees (RRT), Potential fields algorithm in ROS for 7-DoF FrankaPanda Arm to plan a path to pick up the cubes.<br>
-                            For the second stage, we implemented a finite horizon Model Predictive Control (MPC) with position, velocity, acceleration control with the waypoints given by RRT algorithm.<br>
-                            For the third stage, we implemented Heirarchical MPC algorithm where MPC was optimizing the path given by RRT and choosing the path with least cost.  
+                            In this project, I implemented research work presented by Zhengyou Zhang for Calibrating a Camera which is one of the hallmark papers in
+                            camera calibration. Estimated parameters of the camera like the focal length, distortion coefficients and principle point.  
                             <br>
                         </p>
                       </td>
                     </tr>
 
           
-          <!-- UKF -->
+          <!-- Complex Highway Navigation -->
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  <!--bgcolor="#ffffd0"-->
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
-               <img src='images/res1.png' width="270" height="200">
+               <img src='images/rl.gif' width="270" height="200">
               </div>
               <script type="text/javascript">
                 function nerf_start() {
@@ -463,15 +460,15 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>Orienation Tracking using Unscented Kalman Filter</papertitle>
+                <papertitle>Complex Highway Navigation</papertitle>
               <br>
-                <em>Spring 2022</em>
+                <em>Spring 2023</em>
                 <br>
-              Code:<a href="https://github.com/rohiitb/Orientation_tracking_using_UKF"> Github</a>
+              Code:<a href="https://github.com/swagholikar29/Navigating-Complex-Highway-Scenarios-with-Advanced-RL-techniques-in-Highway-Env"> Github</a>
               <p></p>
               <p>
-                  In this project, we implemented an Unscented Kalman filter to track three dimensional orientation.<br>
-                  From the given IMU sensor readings from gyroscopes and accelerometers, we estimated the underlying 3D orientation by learning the appropriate model parameters from ground truth data given by a Vicon motion capture system.
+                  In this project, we Implemented discrete action space algorithms such as DQN, DQN-MR and DQN-PER on OpenAI Gym’s Third party
+                  environment, Highway-env. Compared training time and accuracy to discover DQN-PER has the best performance.
                 <br>
               </p>
             </td>
