@@ -291,7 +291,47 @@
             </p>
           </td>
         </tr>
-         
+        
+        <!-- Point Cloud Semantic Mapping -->
+
+        <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+          <td style="padding:20px;width:30%;vertical-align:middle">
+           <div class="one">
+               <img src='images/seg_combined_gif.gif' width="180" height="200">
+           </div>
+
+            <script type="text/javascript">
+              function nerf_start() {
+                document.getElementById('nerf_image').style.opacity = "1";
+              }
+
+              function nerf_stop() {
+                document.getElementById('nerf_image').style.opacity = "0";
+              }
+              nerf_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>
+                Point Cloud Semantic Mapping 
+              </papertitle>
+            <br>
+      <em>Spring 2023</em>
+            <!-- <br>
+            Video:<a href="https://youtu.be/2mXXd_wS-Yo"> Link</a> -->
+            <br>
+            Code:<a href="https://github.com/swagholikar29/Point-Cloud-Semantic-Mapping"> GitHub</a>
+            <p></p>
+            <p> In this project, sensor fusion of LiDAR and camera was carried out on the Kitti dataset to obtain painted pointcloud.<br>
+              LiDAR pointcloud was projected on the images. Pointcloud segmentation is carried out on the images and 
+              each corresponding point in the pointcloud is classified and painted.
+              ICP registration trials using Open3d are carried out to merge the pointclouds to obtain 3D reconstruction of the scene. 
+              Finally, for each pointcloud, the Bird's eye view is also obtained.
+                <br>
+            </p>
+          </td>
+        </tr>
+
          <!-- Panoptic Segmentation -->
 
          <tr onmouseout="porshadmanip_stop()" onmouseover="porshadmanip_start()">
@@ -320,7 +360,8 @@
               </p>
             </td>
           </tr>    
-         
+          
+
          
           <!-- Path Planning of Non-holonomic Robots -->
 
@@ -400,6 +441,8 @@
             P&Q:<a href="data/swagholikar_assignemnet_1_on_device_DL.ipynb"> Link</a>
             <br>
             NAS:<a href="data/swagholikar_assignemnet_2_on_device_DL.ipynb"> Link</a>
+            <br>
+            DIS:<a href="https://github.com/swagholikar29/Dynamic-Network-Inference"> Link</a>
         <!--    <br> -->
             <br>
         <!--Report:<a href="data/proj_report.pdf"> Link</a>
@@ -412,51 +455,11 @@
               <br>
                 Also, use of BERT Embeddings, Higher Level APIs, Design of Optimizers from Scratch in Numpy. 
               <br>
-                You Only Look Once (YOLO), Pruning & Quantization, Neural Architecture Search.
+                You Only Look Once (YOLO), Pruning & Quantization, Neural Architecture Search, Dynamic Network Inference.
                 <br>
             </p>
           </td>
-        </tr>
-        
-         <!-- Point Cloud Semantic Mapping -->
-
-          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
-            <td style="padding:20px;width:30%;vertical-align:middle">
-             <div class="one">
-                 <img src='images/seg_combined_gif.gif' width="180" height="200">
-             </div>
-
-              <script type="text/javascript">
-                function nerf_start() {
-                  document.getElementById('nerf_image').style.opacity = "1";
-                }
-
-                function nerf_stop() {
-                  document.getElementById('nerf_image').style.opacity = "0";
-                }
-                nerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>
-                  Point Cloud Semantic Mapping 
-                </papertitle>
-              <br>
-        <em>Spring 2023</em>
-              <!-- <br>
-              Video:<a href="https://youtu.be/2mXXd_wS-Yo"> Link</a> -->
-              <br>
-              Code:<a href="https://github.com/swagholikar29/Point-Cloud-Semantic-Mapping"> GitHub</a>
-              <p></p>
-              <p> In this project, sensor fusion of LiDAR and camera was carried out on the Kitti dataset to obtain painted pointcloud.<br>
-                LiDAR pointcloud was projected on the images. Pointcloud segmentation is carried out on the images and 
-                each corresponding point in the pointcloud is classified and painted.
-                ICP registration trials using Open3d are carried out to merge the pointclouds to obtain 3D reconstruction of the scene. 
-                Finally, for each pointcloud, the Bird's eye view is also obtained.
-                  <br>
-              </p>
-            </td>
-          </tr> 
+        </tr> 
             
 
            
